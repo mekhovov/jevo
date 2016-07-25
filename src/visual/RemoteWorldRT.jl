@@ -114,6 +114,7 @@ module RemoteWorldRT
   # @param data Command related data
   #
   function _onDot(rd::RemoteDataRT, data::Array{Any, 1})
+  	print("*")
     if time() - rd.ts > 1.0
       rd.ts = time()
       rd.oldRequests = rd.poolingRequests
